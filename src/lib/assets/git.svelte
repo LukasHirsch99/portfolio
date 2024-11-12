@@ -1,5 +1,4 @@
 <svg
-  class="inline"
   role="img"
   fill="#F05032"
   viewBox="0 0 24 24"
