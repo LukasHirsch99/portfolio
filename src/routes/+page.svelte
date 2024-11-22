@@ -2,7 +2,7 @@
   import JobCard from "$lib/components/job-card/job-card.svelte";
   import { jobs } from "./jobs";
   import picture from "$lib/assets/Portrait.jpeg";
-  import map from "$lib/assets/map.png";
+  import Map from "$lib/assets/map.svelte";
 </script>
 
 <div
@@ -30,7 +30,7 @@
 
   <div>
     <h3 class="pb-2 text-2xl font-outfit text-end">Based in Austria</h3>
-    <img src={map} alt="" class="object-contain" />
+    <Map></Map>
   </div>
 </div>
 
