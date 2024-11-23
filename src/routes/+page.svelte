@@ -1,7 +1,7 @@
 <script lang="ts">
   import JobCard from "$lib/components/job-card/job-card.svelte";
   import { jobs } from "./jobs";
-  import picture from "$lib/assets/Portrait.jpeg";
+  import picture from "$lib/assets/portrait.jpg";
   import Map from "$lib/assets/map.svelte";
 </script>
 
@@ -30,7 +30,7 @@
 
   <div>
     <h3 class="pb-2 text-2xl font-outfit text-end">Based in Austria</h3>
-    <Map></Map>
+    <Map />
   </div>
 </div>
 
