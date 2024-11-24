@@ -1,21 +1,43 @@
 <script>
   import LinkedinLogo from "lucide-svelte/icons/linkedin";
   import GithubLogo from "lucide-svelte/icons/github";
+  import Button from "$lib/components/ui/button/button.svelte";
+  import Sun from "lucide-svelte/icons/sun";
+  import Moon from "lucide-svelte/icons/moon";
+  import { toggleMode } from "mode-watcher";
 </script>
 
-<div class="flex mb-32 mt-10 rounded-lg justify-between">
-  <div>home</div>
+<div class="flex mb-6 mt-4 justify-between">
+  <div class="flex items-center">home</div>
 
   <div class="flex">
-    <a href="https://github.com/LukasHirsch99" target="_blank">
-      <GithubLogo class="mx-3" />
+    <a
+      class="flex items-center"
+      href="https://github.com/LukasHirsch99"
+      target="_blank"
+    >
+      <GithubLogo class="mx-2" />
     </a>
-    <a href="https://linkedin.com/in/lukas-hirsch-1286012b8" target="_blank">
-      <LinkedinLogo class="mx-3" />
+    <a
+      class="flex items-center"
+      href="https://linkedin.com/in/lukas-hirsch-1286012b8"
+      target="_blank"
+    >
+      <LinkedinLogo class="mx-2" />
     </a>
 
-    <div class="mx-3">experience</div>
-    <div class="mx-3">projects</div>
-    <div class="mx-3">about</div>
+    <Button
+      onclick={toggleMode}
+      size="icon"
+      class="hover:bg-transparent bg-transparent text-primary"
+    >
+      <Sun
+        class="h-[1.2rem] w-[1.2rem] rotate-0 scale-125 transition-all dark:-rotate-90 dark:scale-0"
+      />
+      <Moon
+        class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-125"
+      />
+      <span class="sr-only">Toggle theme</span>
+    </Button>
   </div>
 </div>
