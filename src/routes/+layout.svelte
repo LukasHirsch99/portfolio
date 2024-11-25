@@ -10,7 +10,7 @@
 
 
 <ModeWatcher />
-<div class="mx-[10%]">
+<div class="mx-[10%] md:mx-[15%] lg:mx-[20%]">
   <Navbar />
   {@render children()}
 </div>

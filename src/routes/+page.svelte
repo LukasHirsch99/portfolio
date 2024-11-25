@@ -12,13 +12,15 @@
   class="overflow-hidden bg-[#9D4790] size-64 rounded-full blur-[120px] z-[-1] absolute top-[40rem] right-40"
 ></div>
 
-<div class="flex flex-col items-center sm:flex-row gap-3 sm:justify-between">
+<div
+  class="mt-10 flex flex-row flex-wrap items-center justify-center gap-3 sm:justify-around"
+>
   <div>
     <h1 class="font-outfit font-semibold text-3xl">
       Hey, <span class="animate-wave inline-block">👋</span> <br />
       I'm
       <p
-        class="text-transparent bg-clip-text bg-gradient-to-r from-[#CA3995] to-[#8053E1]"
+        class="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#CA3995] to-[#8053E1]"
       >
         Lukas Hirsch
       </p>
@@ -27,10 +29,10 @@
     <h3 class="pb-2 text-xl font-semibold">Software Developer</h3>
   </div>
 
-  <img src={picture} class="rounded-full size-36" alt="" />
+  <img src={picture} class="rounded-full size-52" alt="" />
 
   <div class="flex flex-col">
-    <h3 class="pb-2 text-xl font-outfit text-center sm:text-end">Based in Austria 🇦🇹</h3>
+    <h3 class="pb-2 text-xl font-outfit text-center">Based in Austria 🇦🇹</h3>
     <Map />
   </div>
 </div>

@@ -1,5 +1,5 @@
 <svg
-  class="w-60"
+  class="w-72 object-contain"
   viewBox="0 0 334 167"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
