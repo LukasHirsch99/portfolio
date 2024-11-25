@@ -7,7 +7,7 @@
   import { toggleMode } from "mode-watcher";
 </script>
 
-<div class="flex mb-6 mt-4 justify-between">
+<div class="flex mb-6 justify-between sticky top-4">
   <div class="flex items-center">home</div>
 
   <div class="flex">

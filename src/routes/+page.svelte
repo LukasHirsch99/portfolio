@@ -6,22 +6,22 @@
 </script>
 
 <div
-  class="bg-[#7748B9] size-64 rounded-full blur-[120px] z-[-1] absolute top-10 left-40"
+  class="overflow-hidden bg-[#7748B9] size-64 rounded-full blur-[120px] z-[-1] absolute top-10 left-40"
 ></div>
 <div
-  class="bg-[#9D4790] size-64 rounded-full blur-[120px] z-[-1] absolute top-[40rem] right-40"
+  class="overflow-hidden bg-[#9D4790] size-64 rounded-full blur-[120px] z-[-1] absolute top-[40rem] right-40"
 ></div>
 
-<div class="flex flex-col gap-3 mx-12">
+<div class="flex flex-col items-center sm:flex-row gap-3 sm:justify-between">
   <div>
-    <h1 class="font-outfit font-semibold text-3xl lg:text-5xl">
-      Hey, <br />
+    <h1 class="font-outfit font-semibold text-3xl">
+      Hey, <span class="animate-wave inline-block">👋</span> <br />
       I'm
-      <div
-        class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#CA3995] to-[#8053E1]"
+      <p
+        class="text-transparent bg-clip-text bg-gradient-to-r from-[#CA3995] to-[#8053E1]"
       >
         Lukas Hirsch
-      </div>
+      </p>
     </h1>
 
     <h3 class="pb-2 text-xl font-semibold">Software Developer</h3>
@@ -29,8 +29,8 @@
 
   <img src={picture} class="rounded-full size-36" alt="" />
 
-  <div class="flex flex-col items-start">
-    <h3 class="pb-2 text-xl font-outfit text-end">Based in Austria 🇦🇹</h3>
+  <div class="flex flex-col">
+    <h3 class="pb-2 text-xl font-outfit text-center sm:text-end">Based in Austria 🇦🇹</h3>
     <Map />
   </div>
 </div>
@@ -42,6 +42,38 @@
 {/each}
 
 <style>
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-wave:hover {
+    animation: spin 2.5s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
   div {
     outline: 1px solid transparent;
     -webkit-backface-visibility: hidden;
