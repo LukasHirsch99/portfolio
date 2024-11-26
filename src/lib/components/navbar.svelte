@@ -1,6 +1,7 @@
 <script>
   import LinkedinLogo from "lucide-svelte/icons/linkedin";
   import GithubLogo from "lucide-svelte/icons/github";
+  import MailLogo from "lucide-svelte/icons/mail";
   import Button from "$lib/components/ui/button/button.svelte";
   import Sun from "lucide-svelte/icons/sun";
   import Moon from "lucide-svelte/icons/moon";
@@ -11,6 +12,12 @@
   <div class="flex items-center">home</div>
 
   <div class="flex">
+    <a
+      class="flex items-center"
+      href="mailto:lukas.stag@gmail.com"
+    >
+      <MailLogo class="mx-2" />
+    </a>
     <a
       class="flex items-center"
       href="https://github.com/LukasHirsch99"

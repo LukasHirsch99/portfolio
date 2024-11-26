@@ -1,8 +1,7 @@
 <script lang="ts">
-  import JobCard from "$lib/components/job-card/job-card.svelte";
-  import { jobs } from "./jobs";
-  import picture from "$lib/assets/squareCrop.jpg";
+  import picture from "$lib/assets/squareCrop-free.png";
   import Map from "$lib/assets/map.svelte";
+  import Expirience from "$lib/components/expirience/job-card.svelte";
 </script>
 
 <div
@@ -13,7 +12,7 @@
 ></div>
 
 <div
-  class="mt-10 flex flex-row flex-wrap items-center justify-center gap-3 sm:justify-around"
+  class="mt-10 flex flex-row flex-wrap items-center justify-center sm:justify-around"
 >
   <div>
     <h1 class="font-outfit font-semibold text-3xl">
@@ -29,7 +28,7 @@
     <h3 class="pb-2 text-xl font-semibold">Software Developer</h3>
   </div>
 
-  <img src={picture} class="rounded-full size-52" alt="" />
+  <img src={picture} class="rounded-full size-52 bg-accent" alt="" />
 
   <div class="flex flex-col">
     <h3 class="pb-2 text-xl font-outfit text-center">Based in Austria 🇦🇹</h3>
@@ -39,9 +38,7 @@
 
 <h2 class="text-3xl font-outfit font-semibold mt-12">Experience</h2>
 
-{#each jobs as job}
-  <JobCard {...job} />
-{/each}
+<Expirience />
 
 <style>
   @keyframes spin {
