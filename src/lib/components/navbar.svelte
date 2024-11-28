@@ -8,7 +8,7 @@
   import { toggleMode } from "mode-watcher";
 </script>
 
-<div class="flex justify-between sticky top-4">
+<div class="px-[10%] md:px-[15%] lg:px-[20%] z-50 backdrop-blur-lg bg-gradient-to-b from-primary-foreground to-transparent flex justify-between sticky top-0 pt-4">
   <div class="flex items-center">home</div>
 
   <div class="flex">
