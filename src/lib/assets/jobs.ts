@@ -6,13 +6,14 @@ import CSharp from "$lib/assets/csharp.svelte"
 import Azure from "$lib/assets/azure.svelte"
 import Blazor from "$lib/assets/blazor.svelte"
 import Spring from "$lib/assets/spring.svelte"
+import Arduino from "$lib/assets/arduino.svelte"
 
 export const jobs: JobProps[] = [
   {
     name: "Kappa FS",
     date: "April - August 2024",
     role: "Software Engineer Intern",
-    description: "Web Design, Web Development, Blazor, C#",
+    description: "Integrated a dashboard into an existing Blazor web application for monitoring and managing Azure IoT-Edge devices",
     icons: [
       Git,
       Azure,
@@ -24,7 +25,7 @@ export const jobs: JobProps[] = [
     name: "Austrian Armed Forces",
     date: "January - April 2024",
     role: "Fullstack Developer",
-    description: "Web- & Backend Development, VueJs, Spring Boot, PostgreSQL",
+    description: "Developed a time management system for scheduling and workflow management of professional athletes",
     icons: [
       Git,
       Vue,
@@ -35,7 +36,7 @@ export const jobs: JobProps[] = [
     name: "Kappa FS",
     date: "July - August 2022",
     role: "Software Engineer Intern",
-    description: "Diploma",
+    description: "Developed an analog sensor device for remote monitoring of existing filter systems as part of a diploma project",
     icons: [
       Git,
       Azure,
@@ -45,10 +46,11 @@ export const jobs: JobProps[] = [
     name: "Kappa FS",
     date: "July - August 2021",
     role: "Software Engineer Intern",
-    description: "Motor controller over mqtt and modbus-rtu",
+    description: "Designed and implemented a remote control solution for an electric fan system",
     icons: [
       Git,
       Azure,
+      Arduino
     ],
   },
 ];
