@@ -1,12 +1,12 @@
 import type { JobProps } from "$lib/types/jobprops.svelte";
 
-import Vue from "$lib/assets/vue.svelte"
-import Git from "$lib/assets/git.svelte"
-import CSharp from "$lib/assets/csharp.svelte"
-import Azure from "$lib/assets/azure.svelte"
-import Blazor from "$lib/assets/blazor.svelte"
-import Spring from "$lib/assets/spring.svelte"
-import Arduino from "$lib/assets/arduino.svelte"
+import Vue from "$lib/assets/icons/vue.svelte"
+import Git from "$lib/assets/icons/git.svelte"
+import CSharp from "$lib/assets/icons/csharp.svelte"
+import Azure from "$lib/assets/icons/azure.svelte"
+import Blazor from "$lib/assets/icons/blazor.svelte"
+import Spring from "$lib/assets/icons/spring.svelte"
+import Arduino from "$lib/assets/icons/arduino.svelte"
 
 export const jobs: JobProps[] = [
   {

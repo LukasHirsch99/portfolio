@@ -1,5 +1,6 @@
 <script lang="ts">
   import { jobs } from "$lib/assets/jobs";
+  import { projects } from "$lib/assets/projects";
   import * as Tabs from "$lib/components/ui/tabs/index";
 
   import TechIcon from "./tech-icon.svelte";
@@ -25,8 +26,30 @@
           {job.description}
         </div>
         <div>
-          <div class="flex flex-row flex- flex-wrap w-32 justify-end">
+          <div class="flex flex-row flex-wrap w-32 justify-end">
             {#each job.icons as icon}
+              <TechIcon {icon} />
+            {/each}
+          </div>
+        </div>
+      </div>
+    {/each}
+  </Tabs.Content>
+
+  <Tabs.Content value="projects">
+    {#each projects as project}
+      <div
+        class="flex flex-row justify-between mb-3 p-3 bg-secondary rounded-2xl"
+      >
+        <div>
+          <a href={project.link} target="_blank" class="mb-3 block text-2xl font-outfit">{project.name}</a>
+          <p class="text-zinc-400">
+          {project.description}
+          </p>
+        </div>
+        <div>
+          <div class="flex flex-row flex-wrap w-32 justify-end">
+            {#each project.icons as icon}
               <TechIcon {icon} />
             {/each}
           </div>

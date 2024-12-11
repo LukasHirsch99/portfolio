@@ -1,7 +1,7 @@
 <script lang="ts">
   import picture from "$lib/assets/squareCrop-free.png";
-  import Map from "$lib/assets/map.svelte";
-  import Expirience from "$lib/components/expirience/job-card.svelte";
+  import Map from "$lib/assets/icons/map.svelte";
+  import Expirience from "$lib/components/expirience/expierence.svelte";
 </script>
 
 <div
