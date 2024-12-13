@@ -43,9 +43,7 @@
       >
         <div>
           <a href={project.link} target="_blank" class="mb-3 block text-2xl font-outfit">{project.name}</a>
-          <p class="text-zinc-400">
           {project.description}
-          </p>
         </div>
         <div>
           <div class="flex flex-row flex-wrap w-32 justify-end">
